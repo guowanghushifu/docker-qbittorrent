@@ -32,6 +32,10 @@ RUN \
   fi && \
   apk add -U --upgrade --no-cache \
     qbittorrent-nox==${QBITTORRENT_VERSION} && \
+  echo "**** download custom qbittorrent-nox ****" && \
+  curl -o /usr/bin/qbittorrent-nox -L \
+    "https://github.com/guowanghushifu/bin-release/raw/refs/heads/main/qbittorrent/x86_64/qBittorrent-5.0.5%20-%20libtorrent-v1.2.20/qbittorrent-nox" && \
+  chmod +x /usr/bin/qbittorrent-nox && \
   echo "***** install qbitorrent-cli ****" && \
   mkdir /qbt && \
   if [ -z ${QBT_CLI_VERSION+x} ]; then \
