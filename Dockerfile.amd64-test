@@ -34,7 +34,7 @@ RUN \
     qbittorrent-nox==${QBITTORRENT_VERSION} && \
   echo "**** download custom qbittorrent-nox ****" && \
   curl -o /usr/bin/qbittorrent-nox -L \
-    "https://github.com/guowanghushifu/Seedbox-Components/raw/refs/heads/main/Torrent%20Clients/qBittorrent/x86_64/qBittorrent-5.0.4%20-%20libtorrent-v1.2.20/qbittorrent-nox" && \
+    "https://github.com/guowanghushifu/bin-release/raw/refs/heads/main/qbittorrent/x86_64/qBittorrent-5.0.5%20-%20libtorrent-v1.2.20/qbittorrent-nox" && \
   chmod +x /usr/bin/qbittorrent-nox && \
   echo "***** install qbitorrent-cli ****" && \
   mkdir /qbt && \
